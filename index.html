@@ -1,31 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- google fonts file -->
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <!-- reset file -->
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <!-- materialize file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- additional style file -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gif Tastic Bands</title>
+    <!-- reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- style CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- font CSS  -->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
-    
 
+    <!-- full container -->
+    <div class="container" style="background: transparent;">
+        <h1 class="text-center">Music Galore</h1>
+        <br>
+        <br>
 
+        <!-- buttons div -->
+        <div id="musicButtons"></div>
 
+        <!-- breaks in between top and form -->
+        <br><br>
 
+        <!-- container for form -->
+        <div class="container" id="btn" style="background: transparent;">
+            <form id="bandForm">
+                <label id="add" for="bandInput">Please enter your favorite band!!</label>
+                <input type="text" class="form-control" id="bandInput">
+                <br>
+                <br>
+            </form>
 
-    <!-- api key -->
-    <!-- AgrIByrXSgjJHLpCrjfzMr4XPfJCF2fU -->
-    <!-- materialize script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- app script -->
-    <script src="assets/javascript/app.js"></script>
+            <!-- submit button -->
+            <button onclick="submitButtonClicked()" type="button" id="addBand" class="btn btn-success">Submit</button>
+
+            <!-- breaks in between form and gifs -->
+            <br><br>
+
+            <!-- gif div -->
+            <div id="bands"> </div>
+
+        <!-- end form div -->
+        </div>
+
+    <!-- end full container -->
+    </div>
+
+<!-- bootstrap script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- my javascript -->
+<script src="./javascript/app.js"></script>
+
 </body>
 </html>
+

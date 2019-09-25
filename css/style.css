@@ -1,0 +1,41 @@
+h1 {
+    font-family: Lobster;
+}
+
+.ratings {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.btn-primary {
+    margin-left: 10px;
+    background: green;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 45px;
+}
+
+
+/* attempt at media queries */
+@media screen and (max-width: 480px) {
+    .movImage {
+        width: 500px;
+        height: 500px;
+    }
+    body {
+        background-color: red;
+    }
+}
+
+.form-control {
+    width: 30%;
+}
+
+#add {
+    font-size: 20px;
+    color: white;
+}
